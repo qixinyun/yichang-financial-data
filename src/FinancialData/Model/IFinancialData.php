@@ -38,4 +38,49 @@ interface IFinancialData extends IFinancialDataTypeIdentify, IFinancialDataTypeN
         'FARMER' => 1,
         'ENTERPRISE' => 2
     );
+    
+    const CATEGORY_CN = array(
+        'QYGK' => '企业概况',
+        'JYZK' => '经营状况',
+        'FLSS' => '法律诉讼',
+        'PJXX' => '评价信息',
+        'QTXX' => '其他信息',
+    );
+
+    const TYPE_RELATIONSHIP = array(
+        self::CATEGORY_CN['QYGK'] => array(
+            self::TYPE['ZYGLRYXX'],
+            self::TYPE['GDJCZXX'],
+            self::TYPE['DWTZXX'],
+            self::TYPE['CWZBXX'],
+        ),
+        self::CATEGORY_CN['JYZK'] => array(
+            self::TYPE['ZSCQCZDJ'],
+            self::TYPE['GQCZDJ'],
+            self::TYPE['DCDYDJXX'],
+            self::TYPE['NSXX'],
+            self::TYPE['JCKXX'],
+            self::TYPE['XZXKXX'],
+            self::TYPE['XZCFXX'],
+            self::TYPE['ZLHZZXX'],
+            self::TYPE['BDCDYDJXX']
+        ),
+        self::CATEGORY_CN['FLSS'] => array(
+            self::TYPE['SFSSXX'],
+            self::TYPE['FYZXXX'],
+        ),
+        self::CATEGORY_CN['PJXX'] => array(
+            self::TYPE['WBPJXX'],
+            self::TYPE['HJPJXX'],
+        ),
+        self::CATEGORY_CN['QTXX'] => array(
+            self::TYPE['SBJCXX'],
+            self::TYPE['GJJJCXX'],
+            self::TYPE['GGSYJFXX'],
+            self::TYPE['XEDKXX'],
+            self::TYPE['MJJDXX'],
+            self::TYPE['RZDBXX'],
+            self::TYPE['QTZTSXXX'],
+        ),
+    );
 }
