@@ -30,5 +30,6 @@ interface IFinancialDataTypeName
         IFinancialData::TYPE['MJJDXX'] => '民间借贷信息',
         IFinancialData::TYPE['RZDBXX'] => '融资担保信息',
         IFinancialData::TYPE['QTZTSXXX'] => '其他重要事项信息',
+        IFinancialData::TYPE['TEST'] => '测试金融资源目录',
     );
 }

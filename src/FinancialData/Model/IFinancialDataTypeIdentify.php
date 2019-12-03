@@ -30,5 +30,6 @@ interface IFinancialDataTypeIdentify
         IFinancialData::TYPE['MJJDXX'] => 'MJJDXX',
         IFinancialData::TYPE['RZDBXX'] => 'RZDBXX',
         IFinancialData::TYPE['QTZTSXXX'] => 'QTZTSXXX',
+        IFinancialData::TYPE['TEST'] => 'TEST',
     );
 }

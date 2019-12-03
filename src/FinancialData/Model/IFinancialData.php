@@ -30,6 +30,7 @@ interface IFinancialData extends IFinancialDataTypeIdentify, IFinancialDataTypeN
         'MJJDXX' => 23,
         'RZDBXX' => 24,
         'QTZTSXXX' => 25,
+        'TEST' => 500,
     );
     
     const SUBJECT_CATEGORY = array(
